@@ -2,7 +2,8 @@ import java.util.ArrayList;
 import java.util.Objects;
 
 public class PetStore {
-    ArrayList <Animal> animals  = new ArrayList<>();
+  private ArrayList <Animal> animals  = new ArrayList<>();
+
 
     public PetStore() {
         this.animals = animals;
@@ -31,6 +32,8 @@ public class PetStore {
         if (toRemove != null) {
             animals.remove(toRemove);
             System.out.println("Removed " + toRemove);
+        } else {
+            System.out.println("Animal not found");
         }
     }
     public void listAnimals(){
