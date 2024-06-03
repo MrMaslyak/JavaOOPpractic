@@ -6,6 +6,8 @@ public class Main {
         company.addEmployee(new Engineer("Stas", 270, 2500, "IT-Python"));
         company.addEmployee(new Engineer("Valeryi", 233, 5000, "IT-Java"));
         company.listEmployees();
+        company.removeEmployee(270);
+        company.listEmployees();
         System.out.println("*****************************************************************");
         PetStore petStore = new PetStore();
         petStore.addAnimal(new Dog("Sharik", 2, "hasky", "Friendly with kids"));
